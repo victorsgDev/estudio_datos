@@ -22,3 +22,25 @@ def comprobar_valor_celdas():
 
 
 comprobar_valor_celdas()
+
+
+def data_to_tupla(col):
+    tupla_silvicultura = []
+    col = col.delete(0)
+    for column in col:
+        c = str(column)
+        tupla_silvicultura.append(("sector_silvicultura", c, dataframe[c][4]))
+
+    return tupla_silvicultura
+
+
+def data_to_dic(col):
+    dic_agricultura = []
+    col = col.delete(0)
+    for column in col:
+        c = str(column)
+        dic_agricultura.append(("sector_agricultura", c, dataframe[c][1]))
+
+
+print(data_to_dic(columns))
+print(data_to_tupla(columns))
