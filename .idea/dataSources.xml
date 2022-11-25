@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="produccion" uuid="f608a1e2-6e19-41b6-aa50-cd0d44444f0d">
+    <data-source source="LOCAL" name="produccion" uuid="ef0ec2c9-0036-4918-8c23-383ba2d01450">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\grand\PycharmProjects\hito_sge_victorsanchez\produccion.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\Campus FP\Desktop\campusfp\SGE\1tr\HITOS\estudio_datos\produccion.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
-      <libraries>
-        <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.39.2/sqlite-jdbc-3.39.2.jar</url>
-        </library>
-      </libraries>
     </data-source>
   </component>
 </project>

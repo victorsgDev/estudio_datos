@@ -178,4 +178,19 @@ con = sqlite3.connect("produccion.db")
 
 table = dataframe.to_sql(name="Produccion", con=con)
 
+cursor = con.cursor()
+listAll = cursor.execute("SELECT * FROM Produccion")
+print(listAll.fetchall())
+print("=============================================================================")
 
+listGreaterZero = cursor.execute('SELECT "Producción","2019" from Produccion where "2019" > 0')
+print(listGreaterZero.fetchall())
+print("=============================================================================")
+
+listLessZero = cursor.execute('SELECT "Producción","2021" from Produccion where "2021" < 0')
+print(listLessZero.fetchall())
+print("=============================================================================")
+
+dtf = pd.DataFrame(listGreaterZero.fetchall())
+dtf = dtf.rename(columns={0: 'Produccion', 1: '2019'})
+print(dtf)
